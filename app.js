@@ -3,9 +3,11 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.listen(3000, () => {  // to run server, "node app.js"
+var port_number = server.listen(process.env.PORT || 3000);
+app.listen(port_number, () => {  // to run server, "node app.js"
     console.log('Server started!');
 });
+
 
 app.get('/', function(req, res){
     res.send('<h1>Server is up!</h1>');
