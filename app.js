@@ -8,7 +8,7 @@ app.listen(3000, () => {  // to run server, "node app.js"
 });
 
 app.get('/', function(req, res){
-    res.send('<h1>Hello from Node</h1>');
+    res.send('<h1>Server is up!</h1>');
 });  
 
 
