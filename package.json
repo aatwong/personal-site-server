@@ -1,8 +1,10 @@
 {
   "name": "server",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Personal website server",
-  "main": "index.js",
+  "engines": {
+    "node": "10.10.0"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "npm test"
